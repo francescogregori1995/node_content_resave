@@ -15,6 +15,5 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/core": "^8.9"
-    },
-    "minimum-stability": "dev"
+    }
 }
