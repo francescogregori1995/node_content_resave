@@ -13,7 +13,6 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
         "drupal/core": "^10"
     }
 }
