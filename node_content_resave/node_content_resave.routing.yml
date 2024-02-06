@@ -1,0 +1,7 @@
+node_content_resave.form:
+  path: '/admin/config/development/node_content_resave'
+  defaults:
+    _form: '\Drupal\node_content_resave\Form\NodeContentResaveForm'
+    _title: 'Node Content Resave'
+  requirements:
+    _permission: 'administer site configuration'
