@@ -1,0 +1,20 @@
+{
+    "name": "francescogregori/node_content_resave",
+    "description": "Risalva tutti i nodi",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://francescogregori.it",
+    "authors": [
+        {
+            "name": "Francesco Gregori",
+            "email": "info@francescogregori.it",
+            "homepage": "https://francescogregori.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9",
+        "drupal/core": "^8.9"
+    },
+    "minimum-stability": "dev"
+}
