@@ -6,7 +6,7 @@ The Node Content Resave module is a custom Drupal module that provides functiona
 
 1. Install width composer
 ```bash
-composer require francescogregori/friendly_url_only
+composer require francescogregori/node_content_resave:dev-master
 ```
 
 
