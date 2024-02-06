@@ -1,6 +1,0 @@
-node_content_resave.admin:
-  title: 'Node Content Resave'
-  description: 'Risalva tutti i contenuti dei nodi'
-  parent: system.admin_config_development
-  route_name: node_content_resave.form
-  weight: -100
