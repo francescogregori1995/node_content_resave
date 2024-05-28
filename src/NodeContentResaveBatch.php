@@ -9,10 +9,21 @@ class NodeContentResaveBatch
 
   public static function getBatch($content_type, $update_changed)
   {
-    $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => $content_type]);
+    $connection = \Drupal::database();
+    $query = $connection->select('node_field_data', 'n')
+      ->fields('n', ['nid'])
+      ->condition('n.type', $content_type)
+      ->execute()
+      ->fetchAll();
+
+    $nodes = [];
+    foreach ($query as $row) {
+      $nodes[] = $row->nid;
+    }
+
     $operations = [];
     foreach ($nodes as $node) {
-      $operations[] = ['\Drupal\node_content_resave\NodeContentResaveBatch::resaveNode', [$node->id(), $update_changed]];
+      $operations[] = ['\Drupal\node_content_resave\NodeContentResaveBatch::resaveNode', [$node, $update_changed]];
     }
 
     return [
