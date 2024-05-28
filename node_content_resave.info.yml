@@ -1,5 +1,5 @@
 name: Node Content Resave
 description: A module to resave all nodes of a selected content type.
-core_version_requirement: ^10
+core_version_requirement: ^9 || ^10
 type: module
 package: Development
